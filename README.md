@@ -16,7 +16,7 @@ This is a simple command line application designed to keep track of employees. I
 [Usage](#usage)
 
 # Installation
-To install and use this application, clone this repository to your local machine. Once done you must run `npm install` in the root of the directory to install required dependencies. Then start the app by running `node index`. From there, follow the command line prompts.
+To install and use this application, clone this repository to your local machine. After it is cloned, open a command line from the root of the project. Next you'll want to login to your MySQL with `mysql -u root -p`, enter your password. In the MySQL terminal, run `USE employee_tracker;`. If there is no database found, create one by using `CREATE DATABASE employee_tracker;`, then try using the database again, if successful, you can quit out of the MySQL terminal by running `quit;` Once done you must run `npm install` in the root of the directory to install required dependencies. Then start the app by running `node index.js`. From there, follow the command line prompts.
 
 # Usage
 Here is a video demonstration, showing you how to set-up and use the application.
