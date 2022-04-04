@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS employee;
-DROP TABLE IF EXISTS role;
 DROP TABLE IF EXISTS department;
+DROP TABLE IF EXISTS role;
+DROP TABLE IF EXISTS employee;
 
 CREATE TABLE department (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
@@ -11,7 +11,7 @@ CREATE TABLE role (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     role_title VARCHAR(30),
     role_salary DECIMAL(10,2),
-    department_id INTEGER
+    department_id INTEGER,
     CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES department(id) ON DELETE CASCADE
 );
 
