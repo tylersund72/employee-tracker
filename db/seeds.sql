@@ -18,4 +18,4 @@ VALUES
 (1, 'Sales'),
 (1, 'Engineering'),
 (1, 'Science'),
-(1, 'Boss')
+(1, 'Boss'),

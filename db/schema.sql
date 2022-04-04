@@ -18,10 +18,10 @@ CREATE TABLE role (
     role_title VARCHAR(30),
     role_salary DECIMAL(10,2),
     department_id INT,
-    FOREIGN KEY (department_id) REFERENCES department(department_id) ON DELETE SET NULL
+    FOREIGN KEY (department_id) REFERENCES department(department_id) ON DELETE SET NUll
 );
 
 CREATE TABLE department (
   department_id INTEGER AUTO_INCREMENT PRIMARY KEY,
-  department_name VARCHAR(30)
+  department_name VARCHAR(30) NOT NULL
 );
